@@ -1,0 +1,17 @@
+temperature,humidity,ethylene,co2,onion_type,condition
+12,65,0.8,400,red,good
+13,66,0.9,410,red,good
+14,68,1.1,420,red,good
+15,70,1.3,440,red,good
+16,72,1.5,460,red,risky
+17,75,2.0,500,red,risky
+18,78,2.5,550,red,risky
+19,80,3.0,600,red,spoiled
+20,82,3.5,650,red,spoiled
+11,60,0.7,390,white,good
+12,62,0.8,400,white,good
+16,75,2.1,520,white,risky
+18,80,3.2,620,white,spoiled
+14,70,1.4,480,yellow,good
+17,77,2.3,530,yellow,risky
+19,83,3.8,670,yellow,spoiled

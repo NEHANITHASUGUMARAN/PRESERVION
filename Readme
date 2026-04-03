@@ -1,1 +1,167 @@
-PRESERVION
+🔧 Software Part Overview
+
+The software is responsible for:
+
+Collecting data from sensors
+
+Processing and analyzing conditions
+
+Displaying real-time values
+
+Alerting users when conditions go bad
+
+
+
+---
+
+🧩 1. Technologies Used
+
+You can mention:
+
+Frontend: React
+
+Backend: Node.js 
+
+Database: MongoDB 
+
+Hardware Interface: ESP32
+
+
+
+---
+
+🔄 2. Data Flow
+
+Explain like this:
+
+1. Sensors collect:
+
+Temperature 🌡️
+
+Humidity 💧
+
+Gas (if used, like ammonia)
+
+
+
+2. Microcontroller (ESP8266/Arduino):
+
+Reads sensor data
+
+Sends data to server (via WiFi)
+
+
+
+3. Backend Server:
+
+Receives data through API
+
+Stores in database
+
+
+
+4. Frontend Dashboard:
+
+Displays real-time values
+
+Shows graphs & history
+
+
+
+
+
+---
+
+💻 3. Key Software Modules
+
+📡 Data Acquisition Module
+
+Reads sensor values
+
+Converts analog → digital
+
+
+🌐 Communication Module
+
+Sends data using HTTP/MQTT
+
+Example: REST API (POST /sensor-data)
+
+
+🧠 Processing Module
+
+Checks threshold values:
+
+Temp > 30°C → Risk
+
+Humidity > 70% → Spoilage risk
+
+
+
+🔔 Alert System
+
+Sends alert if conditions are bad:
+
+SMS / Email / App notification
+
+
+
+📊 Visualization Module
+
+Dashboard showing:
+
+Live readings
+
+Graphs (daily trends)
+
+
+
+
+---
+
+🗄️ 4. Database Design (Example)
+
+SensorData:
+- id
+- temperature
+- humidity
+- gas_level
+- timestamp
+
+
+---
+
+⚙️ 5. Sample Logic (Pseudo Code)
+
+if temperature > threshold_temp OR humidity > threshold_humidity:
+    send_alert()
+else:
+    store_data()
+
+
+---
+
+📱 6. User Interface
+
+Dashboard with:
+
+Live readings
+
+Status (Safe / Warning / Critical)
+
+Graphs
+
+
+
+
+---
+
+🎯 7. Features
+
+Real-time monitoring
+
+Data logging
+
+Threshold alerts
+
+Remote access
